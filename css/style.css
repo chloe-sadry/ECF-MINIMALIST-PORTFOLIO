@@ -1,3 +1,5 @@
+/* FONTS */
+
 /* ibarra-real-nova-regular - latin */
 @font-face {
     font-family: 'Ibarra Real Nova';
@@ -82,9 +84,13 @@
             url('../fonts/public-sans-v5-latin-700italic.svg#PublicSans') format('svg'); /* Legacy iOS */
 }
 
-body{
+
+
+.margin-header-main{
     margin: 6.5rem 16.5rem 0rem 16.5rem;
 }
+
+/* HEADER */
 
 .header-container{
     display: flex;
@@ -92,12 +98,12 @@ body{
     justify-content: space-between;
 }
 
-.logo-header{
+.logo-header, .logo-footer{
     display: flex;
     align-items: center;
 }
 
-.main-nav ul{
+.main-nav ul, .main-nav-footer ul{
     display: flex;
     list-style: none;
 }
@@ -109,6 +115,43 @@ body{
     font-family: 'Public Sans';
     font-size: 1.2rem;
     text-transform: uppercase;
+}
+
+/* FOOTER */
+
+.main-footer{
+    background-color: #33323D;
+    padding: 2.4rem 16.5rem ;
+}
+
+.footer-container{
+    display: flex;
+    
+}
+
+.footer-social-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-nav-items a{
+    text-decoration: none;
+    padding: 2rem;
+    color: #FFFFFF;
+    font-family: 'Public Sans';
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    
+}
+
+/* .logo-footer{
+    margin
+} */
+
+.main-nav-footer{
+    display: flex;
+    align-items: center;
 }
 
 
