@@ -110,11 +110,65 @@
 
 .main-nav-items a{
     text-decoration: none;
-    padding: 2rem;
+    padding: 2rem 0rem 2rem 2rem;
     color: #33323D;
     font-family: 'Public Sans';
     font-size: 1.2rem;
     text-transform: uppercase;
+}
+
+/* MAIN */
+
+.intro-about{
+    width: 111rem;
+    height: 60rem;
+    background: url(/ressources/home-bg.png);
+    background-size: cover;
+}
+
+.text-intro{
+    width: 40%;
+    background-color: #FFFFFF;
+    position: relative;
+    top: 19.6rem;
+}
+
+.text-intro p{
+    font-family: 'Ibarra Real Nova';
+    font-weight: 700;
+    font-size: 4.5rem;
+    padding-top: 5.3rem;
+    padding-bottom: 3.8rem;
+    
+}
+
+.btn-about a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.btn-about{
+    width: 20rem;
+    background: #203A4C;
+}
+
+.btn-about p{
+    font-size: 1.2rem;
+    width: 70%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Public sans';
+    padding: 0;
+    
+}
+
+.btn-about img{
+    padding: 1.5rem;
+    background-color: #000;
+    opacity: 0.4;
 }
 
 /* FOOTER */
@@ -126,13 +180,18 @@
 
 .footer-container{
     display: flex;
-    
+    justify-content: space-between;
 }
 
 .footer-social-list{
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: right;
+    width: 60%;
+}
+
+.footer-social-list li{
+    margin-left: 2rem;
 }
 
 .footer-nav-items a{
@@ -145,9 +204,7 @@
     
 }
 
-/* .logo-footer{
-    margin
-} */
+
 
 .main-nav-footer{
     display: flex;
