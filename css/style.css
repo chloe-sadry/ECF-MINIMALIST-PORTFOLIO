@@ -96,6 +96,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 5rem;
 }
 
 .logo-header, .logo-footer{
@@ -119,26 +120,33 @@
 
 /* MAIN */
 
+
+    /* INTRO ABOUT */
 .intro-about{
     width: 111rem;
     height: 60rem;
     background: url(/ressources/home-bg.png);
     background-size: cover;
+    margin-bottom: 15rem;
 }
 
 .text-intro{
-    width: 40%;
+    /* width: 40%; */
     background-color: #FFFFFF;
     position: relative;
-    top: 19.6rem;
+    top: 24.6rem;
+    width: 445px;
+    height: 357px;
 }
 
-.text-intro p{
+.text-intro h1{
+    width: 39rem;
     font-family: 'Ibarra Real Nova';
     font-weight: 700;
-    font-size: 4.5rem;
-    padding-top: 5.3rem;
-    padding-bottom: 3.8rem;
+    font-size: 4.2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #33323D;
     
 }
 
@@ -170,6 +178,37 @@
     background-color: #000;
     opacity: 0.4;
 }
+
+    /* PRESENTATION SPENCER */
+
+.presentation-spencer{
+    display: flex;
+    width: 101.5rem;
+    margin-bottom: 15.4rem;
+}
+
+.portrait-spencer{
+    width: 54rem;
+}
+
+.text-presentation h2{
+    font-family: 'Ibarra Real Nova';
+    font-weight: 700;
+    font-size: 4rem;
+    margin-top: 5.5rem;
+    margin-bottom: 2.2rem;
+}
+
+.text-presentation{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 40%;
+    font-family: 'Public sans';
+    font-size: 1.6rem;
+    margin-left: 12.5rem;
+}
+
+
 
 /* FOOTER */
 
