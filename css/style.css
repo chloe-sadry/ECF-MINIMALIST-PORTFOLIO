@@ -84,10 +84,46 @@
             url('../fonts/public-sans-v5-latin-700italic.svg#PublicSans') format('svg'); /* Legacy iOS */
 }
 
+/* GENERAL */
 
+h2 {
+    font-family: 'Ibarra Real Nova';
+    font-weight: 700;
+    font-size: 4rem;
+    color: #33323D;
+    margin-top: 5.5rem;
+    margin-bottom: 2.2rem;
+}
 
-.margin-header-main{
+h3{
+    font-family: 'Ibarra Real Nova';
+    font-weight: 700;
+    font-size: 4rem;
+    color: #33323D;
+}
+
+p {
+    font-family: 'Public sans';
+    font-size: 1.6rem;
+    color: #33323D;
+}
+
+.container-margin{
     margin: 6.5rem 16.5rem 0rem 16.5rem;
+}
+
+.btn-border{
+    width: max-content;
+    border: #33323D 1px solid;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.9rem 3.5rem;
+    color: #33323D;
+    font-family: 'Public Sans';
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin: 3rem 0rem;
 }
 
 /* HEADER */
@@ -116,14 +152,21 @@
     font-family: 'Public Sans';
     font-size: 1.2rem;
     text-transform: uppercase;
+    
 }
 
-/* MAIN */
+.main-nav-items a:hover{
+    color: #5FB4A2;
+}
+
+
+
+/* MAIN HOME */
 
 
     /* INTRO ABOUT */
+
 .intro-about{
-    width: 111rem;
     height: 60rem;
     background: url(/ressources/home-bg.png);
     background-size: cover;
@@ -131,10 +174,9 @@
 }
 
 .text-intro{
-    /* width: 40%; */
     background-color: #FFFFFF;
-    position: relative;
-    top: 24.6rem;
+    position: sticky;
+    top: 50rem;
     width: 445px;
     height: 357px;
 }
@@ -153,24 +195,18 @@
 .btn-about a{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     color: #FFFFFF;
     text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: 'Public sans';
+    justify-content: space-between;
+    padding-right: 5rem;
 }
 
 .btn-about{
     width: 20rem;
     background: #203A4C;
-}
-
-.btn-about p{
-    font-size: 1.2rem;
-    width: 70%;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Public sans';
-    padding: 0;
-    
 }
 
 .btn-about img{
@@ -191,23 +227,78 @@
     width: 54rem;
 }
 
-.text-presentation h2{
-    font-family: 'Ibarra Real Nova';
-    font-weight: 700;
-    font-size: 4rem;
-    margin-top: 5.5rem;
-    margin-bottom: 2.2rem;
-}
-
 .text-presentation{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     width: 40%;
-    font-family: 'Public sans';
-    font-size: 1.6rem;
     margin-left: 12.5rem;
 }
 
+.text-presentation p{
+    margin-bottom: 5rem;
+}
+
+.text-presentation a{
+    border: #33323D 1px solid;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.9rem 3.5rem;
+    color: #33323D;
+    font-family: 'Public Sans';
+    font-size: 1.5rem;
+}
+
+    /* WORKING TOGETHER */
+
+.together-project{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 13.8rem;
+}
+
+
+.style-ligne{
+    border-top: 0.1rem solid #33323D;
+    display: inline-block;
+    height: 0.1rem;
+    width: 53.4rem;
+    margin: 6rem 2rem;
+    
+}
+
+    /* MAIN PORTFOLIO */
+
+.project-list{
+    display: grid;
+    gap: 8rem;
+}
+
+.project-card {
+    display: flex;
+    margin-left: 16.5rem; 
+    margin-right: 26rem;
+    justify-content: space-between;
+}
+
+.project-card:nth-child(even) {
+    flex-direction: row-reverse;
+    margin-right: 16.5rem;
+    margin-left: 26rem;
+}
+
+.project-illustration img {
+    width: 54rem;
+}
+
+.project-desc{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 35rem;
+}
+
+.portfolio{
+margin: 20rem 16.5rem;
+}
 
 
 /* FOOTER */
@@ -242,8 +333,6 @@
     text-transform: uppercase;
     
 }
-
-
 
 .main-nav-footer{
     display: flex;
