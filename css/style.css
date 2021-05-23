@@ -93,6 +93,7 @@ h2 {
     color: #33323D;
     margin-top: 5.5rem;
     margin-bottom: 2.2rem;
+    text-transform: capitalize;
 }
 
 h3{
@@ -248,7 +249,7 @@ p {
     font-size: 1.5rem;
 }
 
-    /* WORKING TOGETHER */
+/* WORKING TOGETHER */
 
 .together-project{
     display: flex;
@@ -299,6 +300,110 @@ p {
 .portfolio{
 margin: 20rem 16.5rem;
 }
+
+/* MAIN PORTFOLIO PROJECT DETAILS */
+
+.container-hero{
+    margin-bottom: 11.5rem;
+}
+
+        /* GÉNÉRAL PROJECT */
+
+.project-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 6.4rem;
+}
+
+.inside{
+    height: 49.8rem;
+}
+
+.inside-p-color{
+    color: #5FB4A2;
+    font-weight: 700;
+}
+
+.project-desc-items{
+    width: 63.5rem;
+    
+}
+
+        /* PROJECT DESC ITEM */
+
+.project-desc-items h4{
+    font-family: 'Ibarra real nova';
+    font-weight: 400;
+    font-size: 3.2rem;
+    text-transform: capitalize;
+    color: #33323D;
+}
+
+.project-desc-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 119.1rem;
+}
+
+
+
+        /* BTN SWIPE PROJECT*/
+
+.btn-swipe-project{
+    display: flex;
+}
+
+.btn-swipe-project img{
+    width: .8rem;
+    height: 1.6rem;
+
+}
+
+.btn-swipe-project a{
+    display: flex;
+    align-items: center;
+    width: 55.5rem;
+    padding: 3.9rem 0rem;
+    border-top: .1rem solid #33323D;
+    border-bottom: .1rem solid #33323D;
+    
+    text-decoration: none;
+    
+    line-height: 1.5rem;
+    color: #33323D;
+    
+}
+
+.btn-swipe-project p{
+    padding-left: 3.2rem;
+    font-family: 'Ibarra real nova';
+    font-size: 3.2rem;
+    text-transform: capitalize;
+    
+}
+
+.btn-separation{
+    font-family: 'Public sans';
+    font-size: 1.6rem;
+    opacity: .5;
+    padding-left: 3.2rem;
+    text-transform: capitalize;
+    
+}
+
+.btn-next{
+    flex-direction: row-reverse;
+    border-left: .1rem solid #33323D;
+}
+
+.btn-next p, .btn-next .btn-separation{
+    padding-left: 0rem;
+    padding-right: 3.2rem;
+    text-align: right;
+}
+
 
 
 /* FOOTER */
