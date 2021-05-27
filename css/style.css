@@ -118,7 +118,7 @@ p {
     border: #33323D 1px solid;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 1.9rem 3.5rem;
+    padding: 1.5rem 3.5rem;
     color: #33323D;
     font-family: 'Public Sans';
     font-size: 1.5rem;
@@ -126,6 +126,22 @@ p {
     align-items: center;
     margin: 3rem 0rem;
 }
+
+.btn-border:hover{
+    border: none;
+    background-color: #33323D;
+    color: #FAFAFA;
+}
+
+    /* MEDIA QUERIES GÉNÉRAL */
+
+    @media (max-width: 992px){
+        
+        .container-margin{
+            margin: 6.4rem 4.5rem 0rem 4.5rem;
+        }
+    }
+    
 
 /* HEADER */
 
@@ -160,17 +176,35 @@ p {
     color: #5FB4A2;
 }
 
+    /* MEDIA QUERIES HEADER */
+
+@media (max-width: 992px){
+    
+    .header-container{
+        margin-bottom: -3.5rem;
+    }
+    
+    .main-nav-items a{
+        padding: 2rem 0rem 2rem 2rem;
+        font-size: 1.2rem;
+    }
+    
+}
+
+@media (max-width: 375px){
+
+}
 
 
 /* MAIN HOME */
-
 
     /* INTRO ABOUT */
 
 .intro-about{
     height: 60rem;
     background: url(/ressources/home-bg.png);
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
     margin-bottom: 15rem;
 }
 
@@ -214,6 +248,47 @@ p {
     background-color: #5FB4A2;
 }
 
+    /* MEDIA QUERIES INTRO ABOUT */
+
+    @media (max-width: 992px){
+    
+        .intro-about{
+            height: 60rem;
+            background: url(/ressources/home_bg_tablet.png) no-repeat;
+            background-size: contain;
+            margin-bottom: 9.6rem;
+        }
+        
+        .text-intro{
+            top: 54rem;
+            width: 514px;
+            height: 278px;
+        }
+        
+        .text-intro h1{
+            width: 45.8rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            font-size: 4rem;
+        }
+        
+        .btn-about a{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 5rem;
+        }
+        
+        .btn-about{
+            width: 20rem;
+        }
+    
+    }
+    
+    @media (max-width: 375px){
+    
+    }
+
 
     /* PRESENTATION SPENCER */
 
@@ -248,11 +323,36 @@ p {
     font-size: 1.5rem;
 }
 
+    /* MEDIA QUERIES PRESENTATION SPENCER */ 
+
+    @media (max-width: 992px){
+    
+        .presentation-spencer{
+            display: flex;
+            width: 68.9rem;
+            margin-bottom: 10rem;
+        }
+        
+        .portrait-spencer{
+            width: unset;
+        }
+        
+        .text-presentation{
+            width: 33.9rem;
+            margin-left: 5.9rem;
+        }
+    }
+    
+    @media (max-width: 375px){
+    
+    }
+
 /* WORKING TOGETHER */
 
 .together-project{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 13.8rem;
 }
 
@@ -265,6 +365,31 @@ p {
     margin: 6rem 2rem;
     
 }
+
+    /* MEDIA QUERIES WORKING TOGETHER */
+
+    @media (max-width: 992px){
+
+        .together-project{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 13.8rem;
+        }
+        
+        
+        .style-ligne{
+            border-top: 0.1rem solid #33323D;
+            display: inline-block;
+            height: 0.1rem;
+            width: 11.3rem;
+            margin: 6rem 2rem;
+            
+        }
+    }
+
+    @media (max-width: 375px){
+    
+    }
 
     /* MAIN PORTFOLIO */
 
@@ -299,6 +424,42 @@ p {
 .portfolio{
 margin: 20rem 16.5rem;
 }
+
+    /* MEDIA QUERIES MAIN PORTFOLIO */
+
+    @media (max-width: 992px){
+
+        ul.project-list{
+            margin-top: 12rem;
+        }
+        
+        .project-card {
+            margin-left: 4rem; 
+            margin-right: 4rem;
+            align-items: center;
+        }
+        
+        .project-card:nth-child(even) {
+            margin-right: 4rem;
+            margin-left: 4rem;
+        }
+        
+        .project-illustration img {
+            width: 33.9rem;
+        }
+        
+        .project-desc{
+            width: 28.1rem;
+        }
+        
+        .portfolio{
+        margin: 11rem 4rem;
+        }
+    }
+
+    @media (max-width: 375px){
+    
+    }
 
 /* MAIN PORTFOLIO PROJECT DETAILS */
 
@@ -346,6 +507,48 @@ margin: 20rem 16.5rem;
     height: 119.1rem;
 }
 
+    /* MEDIA QUERIES PROJECT DETAILS */
+    
+            /* MEDIA QUERIES GÉNÉRAL PROJECT */
+    
+        @media (max-width: 992px){
+
+            .project-content-for-reverse{
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+            }
+
+            .text-project{
+                width: 33.9rem;
+                height: 15rem;
+                margin-top: -6rem;
+            }
+
+            .project-details{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .container-hero img{
+                padding-top: 5rem;
+            }
+            
+            .inside{
+                height: 34.8rem;
+                width: 67.8rem;
+            }
+            
+            .inside-p-color{
+                font-size: 1.3rem;
+            }
+            
+            .project-desc-items{
+                margin-top: 5rem;
+                width: 67.8rem;
+                
+            }
+        }
 
 
         /* BTN SWIPE PROJECT*/
@@ -367,16 +570,13 @@ margin: 20rem 16.5rem;
     padding: 3.9rem 0rem;
     border-top: .1rem solid #33323D;
     border-bottom: .1rem solid #33323D;
-    
     text-decoration: none;
-    
-    line-height: 1.5rem;
+    line-height: 2rem;
     color: #33323D;
     
 }
 
-.btn-swipe-project p{
-    padding-left: 3.2rem;
+.first-text-swipe{
     font-family: 'Ibarra real nova';
     font-size: 3.2rem;
     text-transform: capitalize;
@@ -387,20 +587,22 @@ margin: 20rem 16.5rem;
     font-family: 'Public sans';
     font-size: 1.6rem;
     opacity: .5;
-    padding-left: 3.2rem;
     text-transform: capitalize;
     
+}
+
+.btn-text-project{
+    padding-left: 3.2rem;
+}
+
+.btn-text-project-next{
+    padding-right: 3.2rem;
+    text-align: right;
 }
 
 .btn-next{
     flex-direction: row-reverse;
     border-left: .1rem solid #33323D;
-}
-
-.btn-next p, .btn-next .btn-separation{
-    padding-left: 0rem;
-    padding-right: 3.2rem;
-    text-align: right;
 }
 
 /* MAIN CONTACT */
@@ -439,6 +641,7 @@ textarea{
     background-color: #203A4C;
     border: none;
     color: #FFFFFF;
+    width: 20rem;
     text-transform: uppercase;
     padding: 1.7rem 2.4rem;
     font-family: 'Public sans';
@@ -470,6 +673,13 @@ textarea{
     flex-direction: column;
 }
 
+.form-item input, .form-item textarea{
+    padding: 1.7rem 1.6rem;
+    font-family: 'Public sans';
+    font-size: 1.3rem;
+}
+
+
 .form-item textarea:valid{
     background-color: #ECECED;
     border: .1rem solid #5FB4A2;
@@ -478,10 +688,6 @@ textarea{
 .form-item textarea:invalid{
     background-color: #ECECED;
     border: .1rem solid #F43030;
-}
-
-.form-item input:enabled{
-    background-color: #ECECED;
 }
 
 .form-item input:valid {
@@ -495,6 +701,31 @@ textarea{
     border: .1rem solid #F43030;
     
 }
+        /* MEDIA QUERIES CONTACT */
+            
+        @media (max-width: 992px){
+
+            .get-in-touch, .contact-spencer{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .get-in-desc{
+                width: 63.5rem;
+                margin-top: 0rem;
+            }
+
+            .header-contact{
+                margin-bottom: 8rem;
+            }
+
+            .form-container{
+                width: 67.8rem;
+                margin-top: 0rem;
+                
+            }
+
+        }
 
 
 
@@ -536,5 +767,18 @@ textarea{
     display: flex;
     align-items: center;
 }
+
+    /* MEDIA QUERIES FOOTER*/
+
+    @media (max-width: 992px){
+        
+        .main-footer{
+            padding: 2.4rem 3.95rem ;
+        }
+        
+        .footer-social-list{
+            width: 40%;
+        }
+    }
 
 
