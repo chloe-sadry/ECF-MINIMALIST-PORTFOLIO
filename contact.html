@@ -10,23 +10,40 @@
 </head>
 <body>
     <header class="site-header container-margin">
-        <div class="header-container header-contact">
+        <div class="header-container">
             <figure class="logo-header">
                 <img src="/ressources/logo-nb.svg" alt="logo minimalist">
             </figure>
-            <nav class="main-nav">
-                <ul>
-                    <li class="main-nav-items">
-                        <a href="/index.html">HOME</a>
-                    </li>
-                    <li class="main-nav-items">
-                        <a href="/portfolio.html">PORTFOLIO</a>
-                    </li>
-                    <li class="main-nav-items">
-                        <a href="/contact.html" style="color: #5FB4A2">CONTACT ME</a>
-                    </li>
-                </ul>
-            </nav>
+            <div id="root">
+                <div id="topnav" class="topnav">
+                    <nav id="topnav_menu" class="main-nav">
+                        <ul>
+                            <li class="main-nav-items">
+                                <a href="/index.html">HOME</a>
+                            </li>
+                            <li class="main-nav-items">
+                                <a href="/portfolio.html">PORTFOLIO</a>
+                            </li>
+                            <li class="main-nav-items">
+                                <a href="/contact.html" style="color: #5FB4A2">CONTACT ME</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+                        <!-- Some spans to act as a hamburger -->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <nav role="navigation" id="topnav_responsive_menu">
+                        <ul>
+                            <li><a href="/index.html">HOME</a></li>
+                            <li><a href="/portfolio.html">PORTFOLIO</a></li>
+                            <li><a href="/contact.html">CONTACT ME</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -123,5 +140,6 @@
             </ul>
         </div>
     </footer>
+    <script src="/app.js"></script>
 </body>
 </html>
